@@ -6,11 +6,27 @@ class Solution(object):
         :rtype: List[int]
         """
         for i in range(len(nums)):
-            if (target - nums[i]) in nums[i+1:]:
-                return [i, nums[i+1:].index(target - nums[i]) + i + 1]
+            if (target - nums[i]) in nums[i + 1:]:
+                return [i, nums[i + 1:].index(target - nums[i]) + i + 1]
+        return []
 
 
-nums = [2,7,11,15]
-target = 100
-a = Solution()
+class Solution2(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        d = {}
+        for i in range(len(nums)):
+            if target - nums[i] in d:
+                return [d[target - nums[i]], i]
+            d[nums[i]] = i
+        return []
+
+
+nums = [3, 3]
+target = 6
+a = Solution2()
 print(a.twoSum(nums, target))
