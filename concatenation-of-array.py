@@ -1,3 +1,8 @@
+"""
+link:https://leetcode-cn.com/problems/concatenation-of-array/
+"""
+
+
 class Solution:
     def getConcatenation(self, nums):
         for i in range(len(nums)):

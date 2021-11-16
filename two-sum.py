@@ -1,3 +1,13 @@
+"""
+link:https://leetcode-cn.com/problems/two-sum/
+
+Solution2 uses hashtable (by using dict), here are some useful links about the principle behind hashtable
+https://www.jianshu.com/p/55ecbc03c8c1
+https://en.wikipedia.org/wiki/Hash_table
+https://wiki.python.org/moin/TimeComplexity
+"""
+
+
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -30,10 +40,3 @@ nums = [3, 3]
 target = 6
 a = Solution2()
 print(a.twoSum(nums, target))
-
-"""
-Solution2 uses hashtable (by using dict), here are some useful links about the principle behind hashtable
-https://www.jianshu.com/p/55ecbc03c8c1
-https://en.wikipedia.org/wiki/Hash_table
-https://wiki.python.org/moin/TimeComplexity
-"""

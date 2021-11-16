@@ -1,3 +1,8 @@
+"""
+link:https://leetcode-cn.com/problems/jewels-and-stones/
+"""
+
+
 class Solution(object):
     def numJewelsInStones(self, jewels, stones):
         """
