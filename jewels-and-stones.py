@@ -1,5 +1,5 @@
 """
-link:https://leetcode-cn.com/problems/jewels-and-stones/
+link: https://leetcode-cn.com/problems/jewels-and-stones/
 """
 
 

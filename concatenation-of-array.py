@@ -1,5 +1,5 @@
 """
-link:https://leetcode-cn.com/problems/concatenation-of-array/
+link: https://leetcode-cn.com/problems/concatenation-of-array/
 """
 
 
