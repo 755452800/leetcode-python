@@ -1,5 +1,5 @@
 """
-link: https://leetcode-cn.com/problems/plus-one/
+link: https://leetcode-cn.com/problems/find-pivot-index/
 """
 
 from typing import List
