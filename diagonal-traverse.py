@@ -12,8 +12,8 @@ class Solution:
         direction = 1
         list = []
         r, c = 0, 0
-        list.append(mat[r][c])
         while len(list) < row*col:
+            list.append(mat[r][c])
             if direction:
                 r = r - 1
                 c = c + 1
@@ -36,7 +36,6 @@ class Solution:
                         r = r
                         c = c + 1
                 direction = 1 - direction
-            list.append(mat[r][c])
         return list
 
 
