@@ -21,11 +21,15 @@ class Solution:
                 mat.extend(matrix[right][up:col - down])
                 right += 1
                 r -= 1
+                if r <= 0:
+                    break
                 direction = "down"
             if direction == "down":
                 mat.extend(vertical[down][right:row - left])
                 down += 1
                 c -= 1
+                if c <= 0:
+                    break
                 direction = "left"
             if direction == "left":
                 tmp = matrix[row - 1 - left][up:col - down]
@@ -33,6 +37,8 @@ class Solution:
                 mat.extend(tmp)
                 left += 1
                 r -= 1
+                if r <= 0:
+                    break
                 direction = "up"
             if direction == "up":
                 tmp = list(list(zip(*matrix))[up][right:row - left])
@@ -40,9 +46,12 @@ class Solution:
                 mat.extend(tmp)
                 up += 1
                 c -= 1
+                if c <= 0:
+                    break
+                direction = "right"
         return mat
 
 
-matrix = [[2,3]]
+matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]
 a = Solution()
 print(a.spiralOrder(matrix))
