@@ -33,6 +33,20 @@ class SolutionR:
 class Solution1:
     def generate(self, numRows: int) -> List[List[int]]:
         res = list()
+        for i in range(numRows):
+            if i == 0:
+                res.extend([[1]])
+            elif i == 1:
+                res.extend([[1, 1]])
+            else:
+                new_row = list()
+                for j in range(i + 1):
+                    if j == 0 or j == i:
+                        new_row.append(1)
+                    else:
+                        new_row.append(res[-1][j - 1] + res[-1][j])
+                res.extend([new_row])
+        return res
 
 
 class Solution:
